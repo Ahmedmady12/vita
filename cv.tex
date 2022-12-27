@@ -1,0 +1,202 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{AHMED ELNAMOURY} \\[7.5pt]
+\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ MIVIDA EMAAR, New Cairo, Egypt 11865} \ $|$ \ 
+\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ aelnamoury@petrobel.org} \ $|$ \ 
+\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ engnmero@gmail.com} \ $|$ \ 
+\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +971-586749290/ +20-1007336555} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Objective}
+Field Operations Management Professionalism in Oil & Gas Fields using critical thinking and communication/teamwork skills plus the ability to work independently. Seeking a challenging assignment with an opportunity for growth and career advancement in a dynamic international organization in the field of   Production   Operations and   Assets   Integrity   &   Reliability Management.
+My motivation is to be the best in everything that I do no matter how simple that thing is to help myself by helping others.  I really enjoy and am very keen on optimizing all operations activities, and solving complex technical problems).
+
+%Interests/ Keywords/ Summary
+\section{Professional Summary}
+Department manager of Process & operation Division with fourteen years’ experience in ABU MADI field (14% of Egypt gas production about 970 MMSCFD. In which have two off shore platforms and onshore gas wells connected by piping networks to onshore treatment plants (4 Raw gas TURBO-COMP, 6 LTS Trains, 2NGL plants, and Shipping area).
+
+%Experience
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Currently Working as Department manager of Process & operation Division  at PETROBEL/ENI JV (ABU MADI FIELD } & \hfill Jan 2021 - present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{ Perform tech service functions relating to day to day process, project problem-solving
+ Arrangements with maintenance teams through CMMS 
+ making inspection tour through all plants for verification HSE complying, and developing IMMS.   
+ issuing production allocation daily, monthly, and annually reports between share holders (ENI&BB&TOTAL&EGPC) 
+ Perform on job training for junior engineers in team for readiness through daily activities to put them in situational phases (instructions/coaching/ monitor controlling/ delegation)
+ Process engineering functions through my team encompass monitoring the unit performance, modeling unit operation, optimizing unit efficiency, originating operating procedures, and troubleshooting unit problems.
+ Project engineering functions encompass conceiving, justifying, designing, and implementing projects for improving process efficiency, increasing products recovery, and complying with HSE.
+ Support turnaround planning, associated shutdown activities as well as MOC’s HAZOP reviews, and associated follow-up actions.
+}  \\
+\end{tabularx}
+
+%Projects
+\section{Achievements}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{ Increasing LPG production by about 15 tons /day in NGL plant by optimizing the operating condition through using aspen HYSIS dynamic.
+ Maximizing trunk lines networks capacities by about 7% between off shore platforms and treatment plants by PIPSIM software. 
+ Fuel gas consumption optimization.
+ Adjust mode of operation for upgrading Turbo-Compressors through life phases for gas wells.
+ Engineering MOCS to eliminate risks and increasing profits in all plants. 
+ Design python program for liquid shipping products (condensate &LPG) calculation.
+ Survive low potential gas wells during facilities S/D by installing some minor modification(MOC’s).
+ Engineering study for degassing system for waste water API tank to reduce environment impact.
+}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+
+2002 - 2007 & Bachelor's Degree at \textbf{Chemical Engineering and Petroleum Refinery Faculty of Petroleum Engineering, Suez Canal University.} \\ 
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Courses & Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+	Simulation software (ASPEN HYSIS, PIPSIM, OLGA FLOW ASSURANCE)
+	Analytical/Problem solving
+	Data analysis
+	Economics Feasibility studies
+	Project management
+	Teamwork and collaboration 
+	Effective communication 
+	Acute decision making
+	Leadership
+	Fluent in English and Arabic
+\\
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
